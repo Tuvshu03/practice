@@ -77,12 +77,36 @@
 //   s = s * i;
 //   console.log(i + "!=", s);
 // }
-let n=8
-let A = [1, 2, 3, 1, 1, 3, 1, 2]
-let s=A[0]
-for(let i=1; i<n; i++){
-    for(let j=1; j<i; j++)
-    if(A[j]+(A[j]+2)>=(A[j]+1)(A[j]+3)){
+// let n=8
+// let A = [1, 2, 3, 1, 1, 3, 1, 2]
+// let s=A[0]
+// for(let i=1; i<n; i++){
+//     for(let j=1; j<i; j++)
+//     if(A[j]+(A[j]+2)>=(A[j]+1)(A[j]+3)){
 
-    }
+//     }
+// }
+
+//  RGB7603 - Супер жаал саад тойрон
+let n = 6;
+let k = 2;
+let A = [2, 4];
+let count = 0;
+let B = [];
+// for (let i = 0; i < n; i++){
+// for(let j=0; j<k; j++){
+//     if(i==A[k]){
+//     }
+// }
+// }
+// if(i+3==A[k]){
+
+// }
+for (let i = 1; i <= n; i++) {
+  if (i != A[count]) {
+    B.push(i);
+  } else {
+    count++;
+  }
 }
+console.log(B);
