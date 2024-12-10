@@ -66,26 +66,20 @@ function degree(a, b) {
 // console.log(c);
 
 // Массивт байгаа эсэх
-function baigaaeseh(a=[], b){
-  let c=0;
-  for(let i=0; i<a.length; i++){
-    if(b==a[i]){
-        c=1;
-        break;
-    }
-  }
-  if(c===1) return "yes";
-  else return "no"
-}
-let A = [1, 2, 3, 4, 5]
-let b=3, console=0
-for(let i=0; i<5; i++){
-    if(b==A[i]){
-        console.log("Yes")
-        c=1
-        break
-    }
-  }
+// function baigaaeseh(a=[], b){
+//   let c=0;
+//   for(let i=0; i<a.length; i++){
+//     if(b==a[i]){
+//         c=1;
+//         break;
+//     }
+//   }
+//   if(c===1) return "yes";
+//   else return "no"
+// }
+// let A = [1, 2, 3, 4, 5];
+// let b=4;
+
 // RGB7090 - Шагай
 // let k;
 // k=prompt();
@@ -178,6 +172,65 @@ for(let i=0; i<5; i++){
 //       s++;
 //       b[j] = -1;
 //     }
-//   }
+//   }  
 // }
 // console.log(a);
+
+// let arr=[1, 3, 2, 4 , 5, 6, 7, 2];
+// const filteredArray = arr.filter((element)=>element>2)
+// console.log(filteredArray)
+// const newArray = arr.map((element)=>element+2)
+// console.log(newArray)
+// const barr = newArray.filter((element)=>element>4)
+// console.log(barr)
+// console.log(arr.reduce((a, b) => a + b, 0))
+// function read(n){
+//   let a=[];
+//   for(let i=0; i<n; i++){
+//     a[i]=Number.prompt(i+"-r element")
+//   }
+//   return a;
+// }
+// let n;
+// n=prompt("n=");
+// let b = read(n);
+// console.log(b)
+// function fcapital(n){
+  
+//   let result = n.toLowerCase();
+//  let a= result[0].toUpperCase();
+
+//   let format = []
+
+//   for(i=0; i<result.length; i++){
+//     if(i==0){
+//       format.push(a)
+//     } 
+//     else{
+
+//       format.push(result[i])
+
+
+//     }
+//   }
+  
+//   return format.join("");
+// }
+// let na = "abCSDd";  
+// let m = fcapital(na);
+// console.log(m);
+
+
+// leet code problems
+// 11. Container With Most Water
+let a=[1,8,6,2,5,4,8,3,7]
+function maximum(a){
+  let max=a[i];
+  for(let i=1; i<a.legth; i++){
+    if(a[i]>max){
+      max=a[i];
+    }
+  }
+  return max, i;
+}
+
