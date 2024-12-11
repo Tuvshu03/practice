@@ -195,42 +195,51 @@ function degree(a, b) {
 // n=prompt("n=");
 // let b = read(n);
 // console.log(b)
-// function fcapital(n){
-  
-//   let result = n.toLowerCase();
-//  let a= result[0].toUpperCase();
-
-//   let format = []
-
-//   for(i=0; i<result.length; i++){
-//     if(i==0){
-//       format.push(a)
-//     } 
-//     else{
-
-//       format.push(result[i])
 
 
-//     }
-//   }
-  
-//   return format.join("");
-// }
-// let na = "abCSDd";  
-// let m = fcapital(na);
-// console.log(m);
+function fcapital(n){
+ let  second;
+  let first = n.slice(0, 1); 
+  let capital;
+  capital = first.toUpperCase();
+  second = n.slice(1)
+  return capital + second;
+}
 
 
 // leet code problems
 // 11. Container With Most Water
-let a=[1,8,6,2,5,4,8,3,7]
-function maximum(a){
-  let max=a[i];
-  for(let i=1; i<a.legth; i++){
-    if(a[i]>max){
-      max=a[i];
-    }
-  }
-  return max, i;
-}
+// let a=[1,8,6,2,5,4,8,3,7]
+// function maximum(a){
+//   let max=a[i];
+//   for(let i=1; i<a.legth; i++){
+//     if(a[i]>max){
+//       max=a[i];
+//     }
+//   }
+//   return max, i;
+// }
+// function get(){
+  
+// }
 
+function fname(na){
+let firstName = na.split(".")[0]
+let lastName = na.split(".")[1] 
+let firstChar, secondChar
+if(lastName[0]=="k"|| lastName[0]=="s"){
+  firstChar = lastName.slice(0, 1)
+  secondChar = lastName.slice(1, 2)
+}
+else{
+  firstChar = lastName.slice(0, 1)
+  secondChar = ""
+}
+let lname
+lname = firstChar.toUpperCase();
+let fname;
+fname = fcapital(firstName);
+return lname + secondChar + ". " + fname
+}
+let email = "tuvshinsaikhan.sh@gmail.com"
+console.log(fname(email))
